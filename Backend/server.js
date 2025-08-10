@@ -15,10 +15,11 @@ const app=express();
 const PORT=4000;
 
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: 'https://resumebuilder-frontend-x1le.onrender.com',
   credentials: true, // if you're using cookies/auth headers
 }));
 app.use(express.json())
+app
 
 //connect db
 connectDB();
